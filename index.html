@@ -104,7 +104,7 @@
     }
 
     .sun {
-      position: fixed;
+      position: relative;
       top: 20px;
       left: 20px;
       width: 80px;
@@ -115,6 +115,12 @@
       justify-content: center;
       align-items: center;
       box-shadow: 0 0 40px #ffc107;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .sun:hover {
+      transform: scale(1.1) rotate(10deg);
     }
 
     .eyes {
@@ -210,7 +216,7 @@
   </div>
 
   <footer>
-    <p>🌱 Desenvolvido por [Seu Nome] - Juntos pelo futuro do planeta 🌎</p>
+    <p>🌱 Desenvolvido por Gabriel Vinicius - Juntos pelo futuro do planeta 🌎</p>
   </footer>
 
   <script>
