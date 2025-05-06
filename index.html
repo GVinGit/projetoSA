@@ -105,8 +105,6 @@
 
     .sun {
       position: relative;
-      top: 20px;
-      left: 20px;
       width: 80px;
       height: 80px;
       background: radial-gradient(circle, #ffd55c, #f9a602);
@@ -169,20 +167,21 @@
 </head>
 <body>
 
-  <div class="sun">
-    <div class="eyes">
-      <div class="eye" id="leftEye"><div class="pupil" id="pupil1"></div></div>
-      <div class="eye" id="rightEye"><div class="pupil" id="pupil2"></div></div>
-    </div>
-  </div>
-
   <header>
     <h1>Mudanças Climáticas</h1>
     <h3>Um problema que afeta o presente e o futuro</h3>
   </header>
 
   <div class="content">
-    <h1>O que está acontecendo?</h1>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <div class="sun">
+        <div class="eyes">
+          <div class="eye" id="leftEye"><div class="pupil" id="pupil1"></div></div>
+          <div class="eye" id="rightEye"><div class="pupil" id="pupil2"></div></div>
+        </div>
+      </div>
+      <h1>O que está acontecendo?</h1>
+    </div>
     <p>O clima do nosso planeta está mudando rapidamente. Tempestades extremas, secas prolongadas, derretimento de geleiras e aumento do nível dos mares são apenas alguns dos sintomas de uma crise global.</p>
     <p>Essas mudanças afetam a agricultura, a biodiversidade, a saúde humana e a economia. E elas são causadas, em grande parte, pelas atividades humanas.</p>
 
