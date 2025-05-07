@@ -1,0 +1,102 @@
+input,textarea
+{
+    width: 600px;
+    padding: 15px;
+    border-radius: 23px;
+    border: none;
+    
+}
+form{
+    box-shadow: 3px 3px 70px rgb(0, 37, 71);
+    margin:  15px;
+    padding: 70px;
+    border-radius: 20px;
+    width: 450px;
+    background-color: rgba(64, 106, 146, 0.438);
+    
+}
+h1{
+    font-family: Staatliches;font-size: 100px;transition: all 0.3s ease;text-shadow: 9px 9px 15px rgba(230, 229, 231, 0.753);color: rgba(255, 255, 255, 0.958);-webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.523);
+}
+body{
+    background-image: url(imagi1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.input-wrapper{
+    padding: 14px 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    
+}
+.input-wrapper i {
+    
+    color: rgb(255, 255, 255);
+}
+button{
+     background: linear-gradient(95deg,#2168a1, #3b9dca);
+     border: none;
+     width: 30%;
+     padding:10px;
+     border-radius: 12px;
+     color: rgb(255, 255, 255);
+     font-size: 17px;font-family: anton;
+     margin-top: 20px;
+     transition: 0,2s;
+}
+
+button:hover{
+    background: linear-gradient(95deg,#17598f, #2980a8);
+    cursor: pointer;
+    transition: 0,2s;
+    transform: scale(1.05);
+}
+
+p{
+    font-family: cormorant ;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    font-size: 16;
+    position: absolute;
+    right:50%
+    
+}
+a{
+    font-size: 17;
+    text-decoration: none;
+    color: rgb(0, 0, 252)
+}
+
+a:hover
+
+.sol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 50;
+    
+
+
+}
+.sol img{
+    width: 180px;
+    
+    
+}
+
+input:focus {
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  box-shadow: 1px 5px 45px #ffffff70;
+}
+
+input:hover {
+  box-shadow: 1px 5px 45px #ffffff70;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
