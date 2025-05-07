@@ -21,8 +21,6 @@
     }
 
     header {
-      position: relative;
-      overflow: hidden;
       background: linear-gradient(135deg, #67b1ee, #4fc3f7);
       color: white;
       padding: 40px 20px;
@@ -39,8 +37,8 @@
       margin-top: 10px;
     }
 
-    /* Rain animation styles */
-    .rain {
+        /* Rain animation styles */
+        .rain {
       position: absolute;
       top: 0;
       left: 0;
@@ -82,7 +80,71 @@
     .raindrop:nth-child(9) { left: 90%; animation-delay: 4s; }
     .raindrop:nth-child(10) { left: 95%; animation-delay: 4.5s; }
 
-    /* Sun styles */
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .content h1 {
+      font-size: 2.2rem;
+      color: #0288d1;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: 20px;
+      box-shadow: #280ca3;
+    }
+
+    button:hover {
+      background: #039be5;
+      transform: scale(1.05);
+    }
+
+    .causa-efeito {
+      display: none;
+      background: #ffffff;
+      border-left: 5px solid #81c784;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .eco-icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .eco-icons div {
+      text-align: center;
+    }
+
+    .eco-icons img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .eco-icons div:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
     .sun {
       position: relative;
       width: 80px;
@@ -125,42 +187,6 @@
       border-radius: 50%;
     }
 
-    .content {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .content h1 {
-      font-size: 2.2rem;
-      color: #0288d1;
-      margin-bottom: 20px;
-      animation: fadeIn 1s ease;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      animation: fadeIn 1.5s ease;
-    }
-
-    button {
-      padding: 12px 25px;
-      background: #0288d1;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease, transform 0.2s ease;
-      margin-top: 20px;
-    }
-
-    button:hover {
-      background: #039be5;
-      transform: scale(1.05);
-    }
-
     footer {
       background: #263238;
       color: #ccc;
@@ -173,6 +199,40 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    @media (max-width: 600px) {
+      .eco-icons {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .h3efeito{
+        animation: fadeIn 1s ease forwards;
+        color: #0288d1;
+    }
+
+    #sabia {
+      background-color:#0288d1;
+      color: white;
+      padding: 1px;
+      border-radius: 8px;
+}
+
+#Impactos {
+  background-color: #0288d1;;
+      color: white;
+      padding: 1px;
+      border-radius: 8px;
+}
+
+#Brasil{
+background-color: #0288d1;
+color: white;
+padding: 6px;
+border-radius: 8px;
+}
+
   </style>
 </head>
 <body>
@@ -205,13 +265,15 @@
       </div>
       <h1>O que está acontecendo?</h1>
     </div>
+   
     <p>O clima do nosso planeta está mudando rapidamente. Tempestades extremas, secas prolongadas, derretimento de geleiras e aumento do nível dos mares são apenas alguns dos sintomas de uma crise global.</p>
     <p>Essas mudanças afetam a agricultura, a biodiversidade, a saúde humana e a economia. E elas são causadas, em grande parte, pelas atividades humanas.</p>
-
+    
     <button onclick="showCausaEfeito()">Entenda Causas e Efeitos</button>
 
     <div class="causa-efeito" id="causaEfeito">
       <h2>Causas</h2>
+    
       <p>- Emissão de gases de efeito estufa (como CO₂ e CH₄)</p>
       <p>- Desmatamento e uso excessivo de recursos naturais</p>
       <p>- Queima de combustíveis fósseis</p>
@@ -219,11 +281,66 @@
       <p>- Aquecimento global e aumento do nível do mar</p>
       <p>- Extinção de espécies e colapso de ecossistemas</p>
       <p>- Crises hídricas, alimentares e migratórias</p>
+     <p>-O efeito estufa é um fenômeno natural essencial para manter a Terra aquecida. Porém, com o aumento da emissão de gases como CO₂, CH₄ e N₂O, esse efeito tem se intensificado, provocando o superaquecimento do planeta.</p> 
+    </div>
+    <br>
+    <br>
+    <center>
+    <div id="Impactos">
+    <h2>Impactos no Brasil</h2>
+        <br>
+     </div>
+     <br>
+    <li><b>Temperaturas mais altas</b> e ondas de calor.</li>
+    
+    <li><b>Chuvas irregulares,</b> causando tanto secas fortes quanto inundações.</li>
+    
+    <li><b>Prejuízos para a natureza</b>, com risco para plantas e animais.</li>
+    
+    <li><b>Dificuldades para a agricultura</b> e menos água em algumas áreas.</li>
+    
+    <li> <b>Mais eventos extremos</b> como tempestades e secas intensas.</li>
+    
+    </center>
+<br><br><br>
+
+<div id="Brasil">
+    <h2>Para combater as mudanças climáticas no Brasil de forma sustentável:</h2>
+    <br>
+  </div>
+    <li><b>Usar mais energia limpa</b> (Sol, vento).</li>
+    <li><b>Proteger e recuperar florestas</b> e usar a terra de forma inteligente na agricultura.</li>
+    <li><b>Cuidar bem da água</b>, usando-a sem desperdício.</li>
+    <li><b>Tornar as cidades mais verdes</b> e preparadas para o clima.</li>
+    <li><b>Restaurar a natureza</b> para que ela ajude a equilibrar o clima.</li>
+
+<br><br>
+<div id="sabia">
+    <center>
+    <h2>Você sabia?</h2>
+    </center><br>
+    </div>
+    <br>
+    <p>Você sabia que o setor de alimentos contribui com cerca de um terço das emissões globais de gases de efeito estufa? Além disso, apenas uma centena de empresas são responsáveis por mais de setenta por cento das emissões industriais desde 1988. E se a temperatura do planeta subir mais de 1,5 grau Celsius, os eventos climáticos extremos, como tempestades e secas, podem se tornar cinco vezes mais frequentes.</p>
+
+    <div class="eco-icons">
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/earth-planet.png" alt="Planeta Terra"/>
+        <p>Preservar o planeta</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/wind-turbine.png" alt="Energia limpa"/>
+        <p>Usar energia limpa</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/forest.png" alt="Plantar árvores"/>
+        <p>Reflorestar</p>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>🌱 Desenvolvido por Gabriel Vinicius - Juntos pelo futuro do planeta 🌎</p>
+    <p>🌱 Desenvolvido por João Pedro C., Kaue Rosa, Gabriel V., joão V. - Juntos pelo futuro do planeta 🌎</p>
   </footer>
 
   <script>
